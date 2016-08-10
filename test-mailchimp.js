@@ -1,7 +1,5 @@
 require('dotenv').config();
 
-console.log({"available variables: ": process.env});
-
 var fs = require('fs');
 var request = require('superagent');
 var json2csv = require('json2csv');
@@ -43,7 +41,6 @@ request
            } else {
 
             var members = res.body.members;
-            console.log(members)
 
             var newArray = [];
 
